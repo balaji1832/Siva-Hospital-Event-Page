@@ -2367,3 +2367,16 @@ body {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+
+
+.FIAGES-image{
+    display: none;
+}
+
+@media (min-width:1440px){
+    .FIAGES-image{
+    display: flex;
+}
+
+}
