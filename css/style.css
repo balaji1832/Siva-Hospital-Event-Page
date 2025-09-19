@@ -2387,6 +2387,14 @@ body {
   z-index: 1050;     
 }
 
+@media (min-width:320px) and (max-width:425px){
+   
+   .register-wrapper{
+    right: 10px;
+   } 
+}
+
+
 @media (min-width:1024px){
    
    .register-wrapper{
