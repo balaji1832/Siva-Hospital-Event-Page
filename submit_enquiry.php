@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         // Contact number exists, show message to user
-        echo "<script>alert('This contact number is already registered. Please use a different number.'); window.history.back();</script>";
+        echo "<script>alert('This contact number is already registered. Please use a different number.'); window.location.href = 'index.html';</script>";
         exit();
     }
 
