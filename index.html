@@ -484,36 +484,36 @@
   </div>
 </div>
 
-<div class="container" style="font-family: 'poppins';font-size: 15px;">
+<div class="container" style="font-family: 'Poppins', sans-serif; font-size: 15px;">
   <div class="contact-form">
     <h3 class="text-center mb-4 text-light">Enquiry Now</h3>
-    <form class="needs-validation" novalidate>
+    <form action="submit_enquiry.php" method="POST" class="needs-validation" novalidate>
       
       <!-- Name -->
       <div class="mb-3">
         <label for="name" class="form-label text-light">Full Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
         <div class="invalid-feedback">Please enter your name.</div>
       </div>
 
       <!-- Contact -->
       <div class="mb-3">
         <label for="contact" class="form-label text-light">Contact Number</label>
-        <input type="tel" class="form-control" id="contact" placeholder="Enter contact number" pattern="[0-9]{10}" maxlength="10" required>
+        <input type="tel" class="form-control" id="contact" name="contact" placeholder="Enter contact number" pattern="[0-9]{10}" maxlength="10" required>
         <div class="invalid-feedback">Please enter a valid 10-digit contact number.</div>
       </div>
 
       <!-- Email -->
       <div class="mb-3">
         <label for="email" class="form-label text-light">Email Address</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
         <div class="invalid-feedback">Please enter a valid email.</div>
       </div>
 
       <!-- Message -->
       <div class="mb-3">
         <label for="message" class="form-label text-light">Message</label>
-        <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." maxlength="100" required></textarea>
+        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message here..." maxlength="100" required></textarea>
         <div class="invalid-feedback">Please enter your message (max 100 characters).</div>
       </div>
 
@@ -525,6 +525,7 @@
     </form>
   </div>
 </div>
+
 
 
 
