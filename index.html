@@ -484,6 +484,47 @@
   </div>
 </div>
 
+<div class="container" style="font-family: 'poppins';font-size: 15px;">
+  <div class="contact-form">
+    <h3 class="text-center mb-4 text-light">Enquiry Now</h3>
+    <form class="needs-validation" novalidate>
+      
+      <!-- Name -->
+      <div class="mb-3">
+        <label for="name" class="form-label text-light">Full Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+
+      <!-- Contact -->
+      <div class="mb-3">
+        <label for="contact" class="form-label text-light">Contact Number</label>
+        <input type="tel" class="form-control" id="contact" placeholder="Enter contact number" pattern="[0-9]{10}" maxlength="10" required>
+        <div class="invalid-feedback">Please enter a valid 10-digit contact number.</div>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <label for="email" class="form-label text-light">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        <div class="invalid-feedback">Please enter a valid email.</div>
+      </div>
+
+      <!-- Message -->
+      <div class="mb-3">
+        <label for="message" class="form-label text-light">Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." maxlength="100" required></textarea>
+        <div class="invalid-feedback">Please enter your message (max 100 characters).</div>
+      </div>
+
+      <!-- Submit -->
+      <div class="text-start">
+        <button class="btn-text-bg" type="submit">Submit</button>
+      </div>
+
+    </form>
+  </div>
+</div>
 
 
 
@@ -992,6 +1033,24 @@
 
 
 
+
+<!-- Form Validation Script -->
+<script>
+  // Bootstrap form validation
+  (() => {
+    'use strict'
+    const forms = document.querySelectorAll('.needs-validation')
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+</script>
 
     <script src="js/main.js"></script>
    

@@ -2429,3 +2429,28 @@ body {
 .register-button:hover{
     background-color: #0072bb;
 }
+
+ .contact-form {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border: 1px solid #fafaf8;
+     background: linear-gradient(135deg, #3c90c4, #9acaee);
+    }
+    .form-control:focus {
+      border-color: #0072bb;
+      box-shadow: 0 0 5px rgba(13,110,253,0.3);
+    }
+
+    .btn-text-bg {
+    background-color: red; 
+    color: #fff;
+    border: none;
+    padding: 4px 14px;  
+    border-radius: 4px;
+    display: inline-block !important; 
+    font-family: 'poppins';
+  }
